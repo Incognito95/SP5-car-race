@@ -34,9 +34,6 @@ public class User implements Serializable {
   @ManyToMany
   private List<Role> roleList = new ArrayList<>();
 
-  @OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-  private List<MovieInfo> movieInfoList;
-
   public List<String> getRolesAsStrings() {
     if (roleList.isEmpty()) {
       return null;
@@ -60,11 +57,6 @@ public class User implements Serializable {
     this.userName = userName;
     this.userSalt = BCrypt.gensalt(10);
     this.userPass = encrypt(userPass);
-    this.movieInfoList = new ArrayList<>();
-  }
-
-  public void AddMovieInfo(MovieInfo movieInfo) {
-    movieInfoList.add(movieInfo);
   }
 
   public String getUserName() {
