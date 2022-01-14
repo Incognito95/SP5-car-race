@@ -38,27 +38,27 @@ public class SetupTestUsers {
 
     // cars
     Car car1 = new Car(1, "Yuki Tsundo", "Alpha Tauri", "Alpha Tauri", 200);
-    Car car2 = new Car(2, "Lando Norris", "Boston Whaler", "Montauk", 1999);
-    Car car3 = new Car(3, "Mick Schumacher", "Chapparal", "SSX", 1999);
-    Car car4 = new Car(4, "Nikita Mazepin", "Grady White", "The Canyon 336", 1999);
-    Car car5 = new Car(5, "Lance Stroll", "Lund", "PRO-V BASS XS", 1998);
-    Car car6 = new Car(6, "George Russell", "Mastercraft", "NXT", 1998);
-    Car car7 = new Car(7, "Charles Leclerc", "Sea Ray", "SUN SPORT 230", 1997);
-    Car car8 = new Car(8, "Max Verstappen", "Tracker", "DEEP V", 1997);
-    Car car9 = new Car(9, "Daniel Ricciardo", "Viking Yacths", "92EB", 1989);
-    Car car10 = new Car(10, "Lewis Hamilton", "Yamaha", "19 FT", 1985);
+    Car car2 = new Car(2, "Lando Norris", "McLaren", "McLaren", 1999);
+    Car car3 = new Car(3, "Mick Schumacher", "Haas F1 Team", "Haas F1 Team", 1999);
+    Car car4 = new Car(4, "Nikita Mazepin", "Haas F1 Team", "Haas F1 Team", 1999);
+    Car car5 = new Car(5, "Lance Stroll", "Aston Martin", "Aston Martin", 1998);
+    Car car6 = new Car(6, "George Russell", "Williams", "Williams", 1998);
+    Car car7 = new Car(7, "Charles Leclerc", "Ferrari", "Ferrari", 1997);
+    Car car8 = new Car(8, "Max Verstappen", "Red Bull Racing", "Red Bull Racing", 1997);
+    Car car9 = new Car(9, "Daniel Ricciardo", "McLaren", "McLaren", 1989);
+    Car car10 = new Car(10, "Lewis Hamilton", "Mercedes", "Mercedes", 1985);
 
     // races
     Race race1 = new Race(1,"Monaco Grand Prix", "Thursday, 18 November", "15:00 - 17:00", "Monaco");
-    Race race2 = new Race(2,"Singapore Grand Prix", "Sunday, 2 October", "20:10 - 22:10", "Singapore");
-    Race race3 = new Race(3,"Abu Dhabi Grand Prix", "Thursday, 17 November", "14.10 - 16.10", "Abu Dhabi");
-    Race race4 = new Race(4,"Bahrain Grand Prix", "Sunday, 20 March", "18:00 - 20:00", "Bahrain");
-    Race race5 = new Race(5,"British Grand Prix", "Sunday, 3 July", "10:00 - 12:00", "United Kingdom");
-    Race race6 = new Race(6,"Indian Grand Prix", "Saturday, 11 December", "6:30 - 8:30", "India");
-    Race race7 = new Race(7,"Korean Grand Prix", "Thursday, 11 October", "22:00 - 00:00", "South Korea");
-    Race race8 = new Race(8,"Malaysian Grand Prix", "Friday, 21 October", "15:00 - 17:00", "Malaysia");
-    Race race9 = new Race(9,"Qatar Grand Prix", "Thursday, 18 November", "14:00 - 16:00", "Qatar");
-    Race race10 = new Race(10,"United States Grand Prix", "Sunday, 23 October", "9:30 - 11:30", "Turkey");
+    Race race2 = new Race(2, "Singapore Grand Prix", "Sunday, 2 October", "20:10 - 22:10", "Singapore");
+    Race race3 = new Race(3, "Abu Dhabi Grand Prix", "Thursday, 17 November", "14.10 - 16.10", "Abu Dhabi");
+    Race race4 = new Race(4, "Bahrain Grand Prix", "Sunday, 20 March", "18:00 - 20:00", "Bahrain");
+    Race race5 = new Race(5, "British Grand Prix", "Sunday, 3 July", "10:00 - 12:00", "United Kingdom");
+    Race race6 = new Race(6, "Indian Grand Prix", "Saturday, 11 December", "6:30 - 8:30", "India");
+    Race race7 = new Race(7, "Korean Grand Prix", "Thursday, 11 October", "22:00 - 00:00", "Korea");
+    Race race8 = new Race(8, "Malaysian Grand Prix", "Friday, 21 October", "15:00 - 17:00", "Qatar");
+    Race race9 = new Race(9, "Qatar Grand Prix", "Thursday, 18 November", "14:00 - 16:00", "Qatar");
+    Race race10 = new Race(10, "United States Grand Prix", "Sunday, 23 October", "9:30 - 11:30", "United States");
 
 
     // check if you can get username and password

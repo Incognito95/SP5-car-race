@@ -19,9 +19,9 @@ import facade from "./ApiFacade";
 import Menu from "./Components/Menu";
 import Home from "./Components/Home";
 import Races from "./Components/Races";
-import SpecificHarbour from "./Components/SpecificHarbour";
-import SpecificBoat from "./Components/SpecificBoat";
-
+import SpecificCars from "./Components/SpecificCars";
+import SpecificDrivers from "./Components/SpecificDrivers";
+import CreateRace from "./Components/CreateRace";
 import NoMatch from "./Components/NoMatch";
 
 
@@ -63,11 +63,14 @@ function App() {
                         <Route exact path="/races">
                             <Races />
                         </Route>
-                        <Route exact path="/specific-harbour">
-                            <SpecificHarbour />
+                        <Route exact path="/specific-cars">
+                            <SpecificCars />
                         </Route>
-                        <Route exact path="/specific-boat">
-                            <SpecificBoat />
+                        <Route exact path="/specific-drivers">
+                            <SpecificDrivers />
+                        </Route>
+                        <Route exact path="/create-race">
+                            <CreateRace />
                         </Route>
                         <NoMatch />
                     </Switch>

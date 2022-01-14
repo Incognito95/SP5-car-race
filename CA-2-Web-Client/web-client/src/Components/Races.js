@@ -3,6 +3,7 @@ import facade from "../ApiFacade";
 
 const Races = () => {
     const [racesList, setRacesList] = useState([]);
+
     useEffect(() => {
         facade.fetchData("races")
             .then(data => {
@@ -29,8 +30,8 @@ const Races = () => {
                             {
                                 racesList.map((race, index) => (
                                 <tr>
-                                    <td>{race.id}</td>
-                                    <td>{race.name}</td>
+                                    <td>{race.race_id}</td>
+                                    <td>{race.race_name}</td>
                                     <td>{race.date}</td>
                                     <td>{race.time}</td>
                                     <td>{race.location}</td>

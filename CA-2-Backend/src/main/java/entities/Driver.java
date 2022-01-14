@@ -10,24 +10,18 @@ import java.util.List;
 @Table(name = "driver")
 public class Driver implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     @Id
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "Id")
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "driver_id")
+    private int driver_id;
 
-    @Basic(optional = false)
-    @NotNull
-    @Column(name = "name")
-    private String name;
+    @Column(name = "driver_name")
+    private String driver_name;
 
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "birth_year")
     private int birth_year;
 
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "gender")
     private String gender;
 
@@ -37,27 +31,28 @@ public class Driver implements Serializable {
     public Driver() {
     }
 
-    public Driver(int id, String name, int birth_year, String gender) {
-        this.id = id;
-        this.name = name;
+    public Driver(int driver_id, String driver_name, int birth_year, String gender) {
+        this.driver_id = driver_id;
+        this.driver_name = driver_name;
         this.birth_year = birth_year;
         this.gender = gender;
+        this.carList = carList;
     }
 
-    public int getId() {
-        return id;
+    public int getDriver_id() {
+        return driver_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDriver_id(int driver_id) {
+        this.driver_id = driver_id;
     }
 
-    public String getName() {
-        return name;
+    public String getDriver_name() {
+        return driver_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDriver_name(String driver_name) {
+        this.driver_name = driver_name;
     }
 
     public int getBirth_year() {
@@ -74,5 +69,13 @@ public class Driver implements Serializable {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public List<Car> getCarList() {
+        return carList;
+    }
+
+    public void setCarList(List<Car> carList) {
+        this.carList = carList;
     }
 }

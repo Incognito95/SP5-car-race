@@ -25,10 +25,13 @@ function Menu () {
                         <NavLink exact active className="active nav-link" to="/races">Races</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink exact active className="active nav-link" to="/specific-harbour">Specific Harbour</NavLink>
+                        <NavLink exact active className="active nav-link" to="/specific-cars">Cars</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink exact active className="active nav-link" to="/specific-boat">Specific Boat</NavLink>
+                        <NavLink exact active className="active nav-link" to="/specific-drivers">Drivers</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink exact active className="btn btn-primary" to="/create-race">Create Race</NavLink>
                     </li>
                 </ul>
                 <form className="d-flex">
